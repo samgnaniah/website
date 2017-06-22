@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Typesandvar - My Docs</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../../architecture/">Architecture</a>
+                    </li>
+                    <li >
+                        <a href="../../key-concepts/">Key concepts</a>
+                    </li>
+                    <li >
+                        <a href="../../native-functions/">Native functions</a>
+                    </li>
+                    <li >
+                        <a href="../../quick-tour/">Quick tour</a>
+                    </li>
+                    <li >
+                        <a href="../../running/">Running</a>
+                    </li>
+                    <li >
+                        <a href="../../samples/">Samples</a>
+                    </li>
+                    <li >
+                        <a href="../../spec/">Spec</a>
+                    </li>
+                    <li >
+                        <a href="../../tools/">Tools</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lang ref <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../lang-ref/actions/">Actions</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/connectors/">Connectors</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/exceptions/">Exceptions</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/functions/">Functions</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/lang-overview/">Lang overview</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/packaging/">Packaging</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/readme/">Readme</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/resources/">Resources</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/services/">Services</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/statements/">Statements</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/transactions/">Transactions</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/types-variables/">Types variables</a>
+</li>
+                            
+<li >
+    <a href="../../lang-ref/workers/">Workers</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Server connectors <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../server-connectors/README/">README</a>
+</li>
+                            
+<li >
+    <a href="../../server-connectors/file-server/">File server</a>
+</li>
+                            
+<li >
+    <a href="../../server-connectors/http2-server/">Http2 server</a>
+</li>
+                            
+<li >
+    <a href="../../server-connectors/jms-client/">Jms client</a>
+</li>
+                            
+<li >
+    <a href="../../server-connectors/jms-server/">Jms server</a>
+</li>
+                            
+<li >
+    <a href="../../server-connectors/websocket-server/">Websocket server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specification <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../README/">README</a>
+</li>
+                            
+<li >
+    <a href="../annotations/">Annotations</a>
+</li>
+                            
+<li >
+    <a href="../concepts/">Concepts</a>
+</li>
+                            
+<li >
+    <a href="../connectors/">Connectors</a>
+</li>
+                            
+<li >
+    <a href="../docsandcomments/">Docsandcomments</a>
+</li>
+                            
+<li >
+    <a href="../exceptions/">Exceptions</a>
+</li>
+                            
+<li >
+    <a href="../expressions/">Expressions</a>
+</li>
+                            
+<li >
+    <a href="../functions/">Functions</a>
+</li>
+                            
+<li >
+    <a href="../futures/">Futures</a>
+</li>
+                            
+<li >
+    <a href="../introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../modularity/">Modularity</a>
+</li>
+                            
+<li >
+    <a href="../names/">Names</a>
+</li>
+                            
+<li >
+    <a href="../services/">Services</a>
+</li>
+                            
+<li >
+    <a href="../statements/">Statements</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Typesandvar</a>
+</li>
+                            
+<li >
+    <a href="../workers/">Workers</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/create-archive/">Create archive</a>
+</li>
+                            
+<li >
+    <a href="../../tutorials/first-program/">First program</a>
+</li>
+                            
+<li >
+    <a href="../../tutorials/">Home</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../statements/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../workers/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#types-variables-constants">Types, Variables &amp; Constants</a></li>
+            <li><a href="#declaring-initializing-variables">Declaring &amp; Initializing Variables</a></li>
+            <li><a href="#allocating-deallocating-variables">Allocating &amp; Deallocating Variables</a></li>
+            <li><a href="#the-any-type">The any Type</a></li>
+            <li><a href="#value-types">Value Types</a></li>
+            <li><a href="#user-defined-reference-types">User-Defined Reference Types</a></li>
+            <li><a href="#built-in-reference-types">Built-In Reference Types</a></li>
+            <li><a href="#iterators">Iterators</a></li>
+            <li><a href="#type-conversion-and-mapping">Type Conversion and Mapping</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="types-variables-constants">Types, Variables &amp; Constants</h1>
+<p>The Ballerina type system has value types and reference types. Ballerina comes with a set of built-in value types, a set of built-in reference types, array &amp; struct type constructors to create new reference types and an iterator type constructor to create new iterators.</p>
+<p>The type system is illustrated in the following:</p>
+<p><img alt="Ballerina Type System" src="../images/typesystem.png" /></p>
+<p>The rest of this section explains the semantics of these types in detail.</p>
+<h2 id="declaring-initializing-variables">Declaring &amp; Initializing Variables</h2>
+<p>Variables declarations are considered statements in the language and can be interspersed with other statements in any order.</p>
+<p>A <code>VariableDeclaration</code> has the following structure:</p>
+<pre><code>TypeName VariableName [ = Expression];
+</code></pre>
+
+<p>Variables can be initialized using the standard literal value syntax for that type of variable or using expressions consisting of literal values and any other variables that are in-scope and already initialized. See the 'Literal Values' subsection below for the syntax for literal values for value types, built-in reference types and user defined reference types.</p>
+<p>Note that variable declarations are considered to be statements of the language and can be done any place where a statement is allowed. See <a href="../statements/">Statements</a>.</p>
+<h2 id="allocating-deallocating-variables">Allocating &amp; Deallocating Variables</h2>
+<p>All value typed variables are allocated on the stack, while all reference typed variables are allocated on the heap. Value typed variables are deallocated when they go out of scope and all reference typed variables are garbage collected when they are no longer in use.</p>
+<p>As all reference typed variables are allocated on the heap, they must be explicitly allocated. This can be done by assigning them a literal value (see the 'Literal Values' subsection below) or by simply creating an empty value.</p>
+<h2 id="the-any-type">The <code>any</code> Type</h2>
+<blockquote>
+<p>NOTE: We are planning to add a type named <code>any</code> to be the root of the type system. This will be used to represent a variable of any type in the type system and will have additional constraints.</p>
+</blockquote>
+<h2 id="value-types">Value Types</h2>
+<p>Ballerina includes the following value types:
+- boolean
+- int
+- float
+- string</p>
+<p>The types <code>int</code> and <code>float</code> both support 64-bit IEEE754 arithmetic. The <code>boolean</code> type has only two values: <code>true</code> and <code>false</code>. The <code>string</code> type operates similar to value types in that assignment and comparison involve the full value and not the pointer.</p>
+<blockquote>
+<p>NOTE: Earlier versions of the language (while it was under development) we had additional types such as long and double. Those have been removed but there are some remnants in the implementation. The only valid value types are those listed above and the implementation will be cleaned up shortly.</p>
+</blockquote>
+<p>Value types can be initialized at declaration by assigning a value of that type. If they are not initialized they have the following default values: int: 0, float: 0.0, string: "" (empty string, not null) and boolean: false.</p>
+<blockquote>
+<p>NOTE: We are considering making the default value of a string to be null.</p>
+</blockquote>
+<p>Literal values for these types are written using standard formats for writing integral values and floating point values; the grammar has the exact specification.</p>
+<h2 id="user-defined-reference-types">User-Defined Reference Types</h2>
+<h3 id="structured-types-records">Structured Types (Records)</h3>
+<p>User defined record types are defined using the <code>struct</code> keyword as follows:</p>
+<pre><code>struct TypeName {
+    TypeName FieldName;+
+}
+</code></pre>
+
+<p>Variables of a struct type are defined by using the TypeName to declare the variable:</p>
+<pre><code>TypeName VariableName;
+</code></pre>
+
+<p>The default value of a struct variable is null.</p>
+<p>Variables of struct types can be initialized at declaration time or later using the following syntax:</p>
+<pre><code>VariableName = { FieldName : Expression, .. FieldName : Expression};
+</code></pre>
+
+<p>This results in a new instance of the struct being created with the named fields assigned the indicated values. If a field is not named then it has the default value for that type when the struct is created. Thus, structs with no values assigned can be created by assigning the value <code>{}</code>.</p>
+<h3 id="arrays">Arrays</h3>
+<p>Array of any type are defined using the array constructor <code>[]</code> next to any type as follows:</p>
+<pre><code>TypeName[] VariableName;
+</code></pre>
+
+<p>The default value of an array variable is null.</p>
+<p>All arrays are unbounded in length and support 0 based indexing. Arrays may be sparse as well and they will grow to meet whatever size needed based on the index (subject to memory availability of course).</p>
+<p>Array typed variables can be initialized at declaration time or later using the following syntax:</p>
+<pre><code>VariableName = [ Expression, Expression, ... ];
+</code></pre>
+
+<p>If there are no expressions given (i.e., the right hand side is <code>[]</code>), then the variable will be initialized to an array of length 0. Else it will be array of the same length as the number of expressions with each value being stored in the corresponding index of the array.</p>
+<blockquote>
+<p>NOTE: We are considering adding support for arrays of arrays (of arrays ...).</p>
+</blockquote>
+<h2 id="built-in-reference-types">Built-In Reference Types</h2>
+<p>Ballerina comes with a pre-defined set of reference types which are key to supporting the types of programs that Ballerina developers are expected to write. These are supported by a set of standard library functions found in the packages <code>ballerina.lang.*</code>. This section defines each of these types and defines their usage.</p>
+<h3 id="type-message">Type: <code>message</code></h3>
+<p>The <code>message</code> type is an opaque type used to represent a request to a <code>resource</code>. This approach is necessary to make the <code>resource</code> programming model network protocol independent. This is the case even though a given <code>resource</code> is always tied to a particular protocol as a <code>service</code> can only be bound to a single network protocol at a time.</p>
+<p>Library functions for accessing information from this type are in the package <code>ballerina.lang.message</code>.</p>
+<p>A variable of type <code>message</code> can be initialized to hold an empty message as follows:</p>
+<pre><code>message VarName = {};
+</code></pre>
+
+<h3 id="type-exception">Type: <code>exception</code></h3>
+<p>The <code>exception</code> type, like <code>message</code>, is an opaque type used to hold an exception.</p>
+<p>See <a href="../exceptions/">Exception Handling</a> for more information on exception handling and the <code>exception</code> type.</p>
+<h3 id="type-map">Type: <code>map</code></h3>
+<p>The <code>map</code> type is a hash map with keys of type string to values of any type.</p>
+<p>Library functions for accessing information from this type are in the package <code>ballerina.lang.maps</code>.</p>
+<blockquote>
+<p>NOTE: A future version of the language will likely introduce syntax to constrain the value space of a map to a particular type. The syntax under consideration for that is map<TypeName> VariableName. We are currently not considering expanding the key space beyond string.</p>
+</blockquote>
+<h3 id="type-xml-xmldocument">Type: <code>xml</code> &amp; <code>xmldocument</code></h3>
+<p>The <code>xml</code> type is used to represent an XML element and <code>xmldocument</code> is used to represent a full XML document. Ballerina also understands XML Schema and allows one to declare that an element or document must conform to a particular schema.</p>
+<p>XML element variables are declared in either of the following ways:</p>
+<pre><code>xml VariableName;
+xml&lt;{SchemaNamespaceName}SchemaTypeOrElementName&gt; VariableName;
+</code></pre>
+
+<p>The first is a variable which may hold any XML element. The second is a variable whose value is an element which is of the indicated XML Schema type (if the name is that of an XML Schema Complex Type) or the element has the name and content model defined by the indicated XML Element declaration (if the name is that of an XML Schema Element declaration). Note that 'SchemaNamespaceName' may be empty, which means the type name is unqualified.</p>
+<p>Similarly, the <code>xmldocument</code> type is used to represent a complete XML Document. Variables are declared as follows:</p>
+<pre><code>xmldocument VariableName;
+xmldocument&lt;{SchemaNamespaceName}DocumentElementTypeOrElementName&gt; VariableName;
+</code></pre>
+
+<p>The first is a variable which may hold any XML document. The second is a variable who's value is an XML document whose document element conforms to the indicated XML Schema type or XML Element declaration, similar to the element case above.</p>
+<p>Ballerina will not always perform runtime schema validation as that will inhibit performance - instead a library function will allow that to be done on demand. For better performance a Ballerina implementation is expected to stream the contents of XML documents and only load into memory what is needed based on how the element or document is used in the program.</p>
+<blockquote>
+<p>NOTE: The Ballerina runtime implementation in version 0.8 does not currently support the scheme constraining mechanism explained above.</p>
+</blockquote>
+<p>Literal XML values can be assigned to <code>xml</code> and <code>xmldocument</code> typed variables as follows:</p>
+<pre><code>xml VariableName = `&lt;xml-element-name [namespace declarations] [attributes]&gt;element-content&lt;/xml-element-name&gt;`;
+</code></pre>
+
+<p>The same syntax is used to assign a literal value to a variable of type <code>xmldocument</code>.</p>
+<p>Within the literal XML expression (enclosed within back quote characters), other in-scope variables can be referred to use the syntax <code>${VariableName}</code> and that will be replaced by the value of the variable.</p>
+<blockquote>
+<p>NOTE: There is currently no way to insert the XML Declaration or any processing instructions or DTD nodes or comment nodes etc. to the document literally.</p>
+</blockquote>
+<p>Library functions for manipulating XML documents and elements are in the package <code>ballerina.lang.xmls</code>.</p>
+<h3 id="type-json">Type: <code>json</code></h3>
+<p>JSON is a textual format for representing a collection of values: a simple value (string, number, “true”, “false”, “null”), an array of values or an object. Ballerina also understands JSON Schema and allows one to declare that a JSON document must conform to a particular schema.</p>
+<p>Ballerina has a single type named “json” that can represent any JSON value. Thus it is a built-in union type in Ballerina whose value can be any one of a string, a float, a boolean, an array of any or a map of any. We provide utility functions to read a JSON document to create a JSON typed value. The lexical representation of a value of that type is JSON, thus simply printing a JSON typed variable results in a JSON string.</p>
+<p>JSON variables are declared in the following way:</p>
+<pre><code>json VariableName;
+</code></pre>
+
+<p>This is a variable that may hold any JSON document.</p>
+<p>Ballerina will not always perform runtime schema validation as that will inhibit performance - instead a library function will allow that to be done on demand. For better performance a Ballerina implementation is expected to stream the contents of JSON documents and only load into memory what is needed based on how the document is used in the program.</p>
+<blockquote>
+<p>NOTE: The Ballerina runtime implementation in version 0.8 does not currently support the scheme constraining mechanism explained above.</p>
+</blockquote>
+<p>Literal JSON values can be assigned to <code>json</code> typed variables as follows:</p>
+<pre><code>json VariableName = {&quot;PropertyName&quot; : &quot;Value&quot;, &quot;PropertyName&quot;: &quot;Value&quot;, ...};
+</code></pre>
+
+<p>Within the literal JSON expression, other in-scope variables can be referred to use the syntax <code>VariableName</code> and that is replaced by the value of the variable.</p>
+<blockquote>
+<p>NOTE: We are considering allowing the value of a property to be an expression.</p>
+</blockquote>
+<p>A field of any of these three types can be accessed by using “.” or using array indexing:</p>
+<pre><code>struct address {
+  string city;
+  string country;
+}
+
+address a1 = { city : “Colombo”, “country” : “Sri Lanka” };
+json j = { city : “Colombo”, “country” : “Sri Lanka” };
+map m = { city : “Colombo”, “country” : “Sri Lanka” };
+
+system:println (a1.city, a1[“country”]);
+system:println (j.city, j[“country”]);
+system:println (m.city, m[“country”]);
+
+</code></pre>
+
+<p>If the accessed field does not exist, in the case of a struct there will be a compile-time error, while the other cases will result in a null value being returned.</p>
+<h3 id="type-datatable">Type: <code>datatable</code></h3>
+<p>The <code>datatable</code> type is used to hold tabular data, such as those returned from an SQL database query and provides cursor based access to the data. As of version 0.8, values of this type can only be created as the return value of certain actions of the SQL data connector (see the <code>ballerina.data.sql</code> package).</p>
+<p>Navigating a <code>datatable</code> requires one to use the library functions in the package <code>ballerina.lang.datatables</code>. More information is available in the documentation for that package.</p>
+<blockquote>
+<p>NOTE: This section needs more elaboration.</p>
+</blockquote>
+<h2 id="iterators">Iterators</h2>
+<p>Iterators are defined using the iterator constructor <code>~</code> as follows:</p>
+<pre><code>TypeName~
+</code></pre>
+
+<p>Iterator typed values are navigated through using an <code>iterate</code> statement.</p>
+<blockquote>
+<p>NOTE: Iterators are still under development and not fully implemented.</p>
+</blockquote>
+<h2 id="type-conversion-and-mapping">Type Conversion and Mapping</h2>
+<p>Ballerina supports two styles of type conversion: implicit coercion and explicit casting. In addition, Ballerina allows one to add to the library of type convertors that may be explicitly invoked using the type cast operation.</p>
+<h3 id="implicit-coercions">Implicit Coercions</h3>
+<p>The following lossless type coercions are pre-defined in Ballerina:
+- boolean -&gt; int/float with values 0/0.0 or 1/1.0 for false or true, respectively
+- int -&gt; float</p>
+<h3 id="explicit-casting">Explicit Casting</h3>
+<p>If a type conversion is lossy then it must be explicitly invoked via the type casting operator. The syntax is as follows:</p>
+<pre><code>TypeName1 VariableName1;
+TypeName2 VariableName2;
+
+VariableName2 = (TypeName2) VariableName1;
+</code></pre>
+
+<p>This cast will be rejected at compile time if a suitable type mapper is not found. Ballerina defines the following pre-defined type mappings:
+- float -&gt; int (by truncating at the decimal point)
+- int -&gt; boolean (by mapping 0 to false and any other value to true)
+- float -&gt; boolean (by mapping 0.0 to false and any other value to true)</p>
+<h3 id="type-mapping">Type Mapping</h3>
+<p>Ballerina allows one to program type convertors that convert one type to another and then invoke them via the type cast operator.</p>
+<p>A <code>typemapper</code> is defined as follows:</p>
+<pre><code>typemapper TypeMapperName (TypeName VariableName) (TypeName) {
+    Statement;+
+}
+</code></pre>
+
+<p>This declares that the type mapper named TypeMapperName is able to convert a value which is of the parameter type to a value of the result type. The logic of the conversion is found within the body of the type mapper as Ballerina code.</p>
+<blockquote>
+<p>NOTE: The grammar will be tightened in a future version of the language to limit the statements that can be put inside a typemapper. This will be done partly to ensure sufficient graphical parity and secondly to ensure that a typemapper has a dataflow style execution model to enable high performant streaming execution.</p>
+</blockquote>
+<p>If a TypeMapper has been defined from Type1 to Type2, it will be invoked by the runtime using the cast operator as shown below:</p>
+<pre><code>Type1 t1;
+Type2 t2;
+
+t2 = (Type2) t1;
+</code></pre>
+
+<p>That is, the registered type convertor is invoked by indicating the type cast as above. Note that while
+the compiler can auto-detect the right convertor to apply, we have chosen to force the user to
+request the appropriate convertor by applying a cast as the conversion may be lossy.</p>
+<blockquote>
+<p>NOTE: We are considering syntax to allow one to name the specific convertor to apply as well as to possibly apply covertors transitively.</p>
+</blockquote>
+<h4 id="built-in-type-mappers">Built in Type Mappers</h4>
+<p>In addition to the built-in value type coercions, Ballerina also may include additional pre-defined type mappers to make it easier to program common scenarios. These are found in the specific packages for those types.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

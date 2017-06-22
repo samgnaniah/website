@@ -504,11 +504,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <pre><code>VariableAccessor = Expression;
 </code></pre>
 
-<p>where a <code>VariableAccessor</code> is one of:
-- VariableName
-- VariableAccessor'['ArrayIndex']'
-- VariableAccessor'['MapIndex']'
-- VariableAccessor.FieldName</p>
+<p>where a <code>VariableAccessor</code> is one of:</p>
+<ul>
+<li>VariableName</li>
+<li>VariableAccessor'['ArrayIndex']'</li>
+<li>VariableAccessor'['MapIndex']'</li>
+<li>VariableAccessor.FieldName</li>
+</ul>
 <h2 id="if-else">If-else</h2>
 <p>An <code>if-else</code> statement provides a way to perform conditional execution. In the Composer, you can drag the If-Else icon <img alt="alt-text" src="../../images/icons/if-else.png" title="If-Else icon" /> from the tool palette to the canvas to add the statement to your program. </p>
 <p>An <code>if-else</code> statement is defined as follows: </p>
@@ -553,10 +555,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </code></pre>
 
 <p>Note that if the <code>join</code> clause is missing, it is equivalent to waiting for all workers to complete and ignorning the results.</p>
-<p>The <code>JoinCondition</code> is one of the following:
-- <code>any IntegerValue [(WorkerNameList)]</code>: wait for any k (i.e., the IntegerValue) of the given workers or any of the workers
-- <code>all [(WorkerNameList)]</code>: wait for all given workers or all of the workers</p>
-<p>where <code>WorkerNameList</code> is a list of comma-separated names of workers.</p>
+<p>The <code>JoinCondition</code> is one of the following:</p>
+<ul>
+<li><code>any IntegerValue [(WorkerNameList)]</code>: wait for any k (i.e., the IntegerValue) of the given workers or any of the workers</li>
+<li><code>all [(WorkerNameList)]</code>: wait for all given workers or all of the workers</li>
+</ul>
+<p>In this scenario, <code>WorkerNameList</code> is a list of comma-separated names of workers.</p>
 <blockquote>
 <p><strong>Note:</strong> The join condition "any k" where k != 1 is not yet implemented.</p>
 </blockquote>
